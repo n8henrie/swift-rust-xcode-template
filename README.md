@@ -1,48 +1,44 @@
 # Swift Rust Xcode Template
 
-[![Build Status](https://github.com/simlay/{{crate_name}}/workflows/Template/badge.svg)](https://github.com/simlay/{{crate_name}}/actions)
+[![Build Status](https://github.com/n8henrie/swift-rust-xcode-template/workflows/Template/badge.svg)](https://github.com/n8henrie/swift-rust-xcode-template/actions)
 
 This is a template for quickly building an iOS app in rust and swift. It uses
 `cbindgen` to build `bindings.h` for convenient rust-swift interop.
 
-To use this with [cargo-generate](https://github.com/ashleygwilliams/cargo-generate) do:
+To use this with [cargo-generate](https://github.com/cargo-generate/cargo-generate) do:
+
+```console
+$ cargo generate --git https://github.com/n8henrie/swift-rust-xcode-template.git --name myproject
+$ cd myproject
 ```
-cargo generate --git https://github.com/simlay/{{crate_name}}.git --name myproject
-cd myproject
-./rename.sh
+
+To build the rest of the app/project you'll need to add the appropriate
+targets:
+
+```console
+$ rustup target add aarch64-apple-ios aarch64-apple-ios-sim`
 ```
 
-The `./rename.sh` step renames the xcode stuff to match your project name.
+You may also need to add `x86_64-apple-ios`; for running in the simulator on my
+M1 Mac and my iPhone 13, the above targets seem to be sufficient. Please open
+an issue if adding `x86_64` would be helpful for you!
 
-To build the rest of the app/project you'll need to run:
-* `cargo install cargo-lipo`
-* `rustup target add aarch64-apple-ios x86_64-apple-ios`
-
-After that you can build the app via the Xcode zoom-zoom-play button or run:
-`xcodebuild -target myproject -configuration Debug -scheme my-test-app -sdk iphonesimulator13.2`
+Building from within XCode should work; it calls `./xcode-build-script.sh`,
+which runs the `cargo build` steps.
 
 Currently, there's some very rudimentary swift code that calls the rust with a
 closure passed in. You can see that code
-[here](https://github.com/simlay/{{crate_name}}/blob/74e90a61aa63dc7d2fac37b3a4f7cec17fd81171/{{crate_name}}/AppDelegate.swift#L18-L29).
-
+[here](https://github.com/n8henrie/swift-rust-xcode-template/blob/74e90a61aa63dc7d2fac37b3a4f7cec17fd81171/swift-rust-xcode-template/AppDelegate.swift#L18-L29).
 
 ## Template Maintenance
 
-Adding new things to this template is unfortunately annoying to add to or
-maintain because of the template tags in
-`{{crate_name}}.xcodeproj/project.pbxproj`, `rename.sh` and
-`Cargo.toml`. This project is open to other work flows but here's what seems
-like the least worst option:
+In my experience, XCode doesn't play very well with templating tools like
+`cookiecutter` or `cargo generate`. @simlay was using `./rename.sh`, which I
+have updated a bit, but hopefully should no longer be necessary as I've
+included the `cargo-generate` templates into the XCode project structure
+itself, which seems to work.
 
-```
-git clone https://github.com/simlay/{{crate_name}}
-cargo generate --git ./{{crate_name}} --name update-{{crate_name}}
-cd update-{{crate_name}}
-./rename.sh
-```
-
-modify your stuff and then `cp` the files back to the other directory.
-
-I'f you're doing a lot of things you may want to symlink the `src/lib.rs`,
-`{{crate_name}}/*.swift`, etc. to the {{crate_name}}
-repo checkout.
+I'm leaving `rename.sh` around, however, since it provides a handy template for
+batch renaming in the project, and I'm sure there are still a few bugs and edge
+cases in which a `project-name` that's suitable for Rust doesn't work well in
+XCode, and vice-versa.
