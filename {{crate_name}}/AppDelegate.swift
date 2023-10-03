@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  swift-rust-xcode-template
+//  {{crate_name}}
 //
 //  Created by Sebastian Imlay on 3/18/20.
 //  Copyright © 2020 Sebastian Imlay. All rights reserved.

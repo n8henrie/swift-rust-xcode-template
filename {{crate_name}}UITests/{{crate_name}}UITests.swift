@@ -1,6 +1,6 @@
 //
-//  swift_rust_xcode_templateUITests.swift
-//  swift-rust-xcode-templateUITests
+//  {{crate_name}}UITests.swift
+//  {{crate_name}}UITests
 //
 //  Created by Sebastian Imlay on 3/18/20.
 //  Copyright © 2020 Sebastian Imlay. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class swift_rust_xcode_templateUITests: XCTestCase {
+class {{crate_name}}UITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

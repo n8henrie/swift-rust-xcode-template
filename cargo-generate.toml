@@ -1,6 +1,6 @@
 [template]
 include = [
     "Cargo.toml",
-    "swift-rust-xcode-template.xcodeproj/project.pbxproj",
+    "*crate_name*",
     "rename.sh",
 ]

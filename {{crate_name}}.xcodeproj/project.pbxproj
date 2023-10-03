@@ -24,19 +24,19 @@
 			containerPortal = 96B2CE3C2422EC030082A149 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96B2CE432422EC030082A149;
-			remoteInfo = "{{project-name}}";
+			remoteInfo = "{{crate_name}}";
 		};
 		96B2CE662422EC050082A149 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 96B2CE3C2422EC030082A149 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96B2CE432422EC030082A149;
-			remoteInfo = "{{project-name}}";
+			remoteInfo = "{{crate_name}}";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		96B2CE442422EC030082A149 /* {{project-name}}.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "{{project-name}}.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B2CE442422EC030082A149 /* {{crate_name}}.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "{{crate_name}}.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B2CE472422EC030082A149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96B2CE492422EC030082A149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		96B2CE4B2422EC030082A149 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,10 +44,10 @@
 		96B2CE502422EC040082A149 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96B2CE532422EC040082A149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96B2CE552422EC040082A149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96B2CE5A2422EC040082A149 /* {{project-name}}Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "{{project-name}}Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B2CE5A2422EC040082A149 /* {{crate_name}}Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "{{crate_name}}Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B2CE5E2422EC050082A149 /* {{crate_name}}Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = {{crate_name}}Tests.swift; sourceTree = "<group>"; };
 		96B2CE602422EC050082A149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96B2CE652422EC050082A149 /* {{project-name}}UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "{{project-name}}UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B2CE652422EC050082A149 /* {{crate_name}}UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "{{crate_name}}UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B2CE692422EC050082A149 /* {{crate_name}}UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = {{crate_name}}UITests.swift; sourceTree = "<group>"; };
 		96B2CE6B2422EC050082A149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96CA26C72423C1A100BFCA79 /* lib{{crate_name}}.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib{{crate_name}}.a; path = target/universal/debug/lib{{crate_name}}.a; sourceTree = "<group>"; };
@@ -82,9 +82,9 @@
 		96B2CE3B2422EC030082A149 = {
 			isa = PBXGroup;
 			children = (
-				96B2CE462422EC030082A149 /* {{project-name}} */,
-				96B2CE5D2422EC040082A149 /* {{project-name}}Tests */,
-				96B2CE682422EC050082A149 /* {{project-name}}UITests */,
+				96B2CE462422EC030082A149 /* {{crate_name}} */,
+				96B2CE5D2422EC040082A149 /* {{crate_name}}Tests */,
+				96B2CE682422EC050082A149 /* {{crate_name}}UITests */,
 				96B2CE452422EC030082A149 /* Products */,
 				96CA26C62423C1A100BFCA79 /* Frameworks */,
 			);
@@ -93,14 +93,14 @@
 		96B2CE452422EC030082A149 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96B2CE442422EC030082A149 /* {{project-name}}.app */,
-				96B2CE5A2422EC040082A149 /* {{project-name}}Tests.xctest */,
-				96B2CE652422EC050082A149 /* {{project-name}}UITests.xctest */,
+				96B2CE442422EC030082A149 /* {{crate_name}}.app */,
+				96B2CE5A2422EC040082A149 /* {{crate_name}}Tests.xctest */,
+				96B2CE652422EC050082A149 /* {{crate_name}}UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96B2CE462422EC030082A149 /* {{project-name}} */ = {
+		96B2CE462422EC030082A149 /* {{crate_name}} */ = {
 			isa = PBXGroup;
 			children = (
 				96B2CE472422EC030082A149 /* AppDelegate.swift */,
@@ -111,7 +111,7 @@
 				96B2CE552422EC040082A149 /* Info.plist */,
 				96B2CE4F2422EC040082A149 /* Preview Content */,
 			);
-			path = "{{project-name}}";
+			path = "{{crate_name}}";
 			sourceTree = "<group>";
 		};
 		96B2CE4F2422EC040082A149 /* Preview Content */ = {
@@ -122,22 +122,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		96B2CE5D2422EC040082A149 /* {{project-name}}Tests */ = {
+		96B2CE5D2422EC040082A149 /* {{crate_name}}Tests */ = {
 			isa = PBXGroup;
 			children = (
 				96B2CE5E2422EC050082A149 /* {{crate_name}}Tests.swift */,
 				96B2CE602422EC050082A149 /* Info.plist */,
 			);
-			path = "{{project-name}}Tests";
+			path = "{{crate_name}}Tests";
 			sourceTree = "<group>";
 		};
-		96B2CE682422EC050082A149 /* {{project-name}}UITests */ = {
+		96B2CE682422EC050082A149 /* {{crate_name}}UITests */ = {
 			isa = PBXGroup;
 			children = (
 				96B2CE692422EC050082A149 /* {{crate_name}}UITests.swift */,
 				96B2CE6B2422EC050082A149 /* Info.plist */,
 			);
-			path = "{{project-name}}UITests";
+			path = "{{crate_name}}UITests";
 			sourceTree = "<group>";
 		};
 		96CA26C62423C1A100BFCA79 /* Frameworks */ = {
@@ -151,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96B2CE432422EC030082A149 /* {{project-name}} */ = {
+		96B2CE432422EC030082A149 /* {{crate_name}} */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96B2CE6E2422EC050082A149 /* Build configuration list for PBXNativeTarget "{{project-name}}" */;
+			buildConfigurationList = 96B2CE6E2422EC050082A149 /* Build configuration list for PBXNativeTarget "{{crate_name}}" */;
 			buildPhases = (
 				96CA26C52423C03000BFCA79 /* ShellScript */,
 				96B2CE402422EC030082A149 /* Sources */,
@@ -164,14 +164,14 @@
 			);
 			dependencies = (
 			);
-			name = "{{project-name}}";
-			productName = "{{project-name}}";
-			productReference = 96B2CE442422EC030082A149 /* {{project-name}}.app */;
+			name = "{{crate_name}}";
+			productName = "{{crate_name}}";
+			productReference = 96B2CE442422EC030082A149 /* {{crate_name}}.app */;
 			productType = "com.apple.product-type.application";
 		};
-		96B2CE592422EC040082A149 /* {{project-name}}Tests */ = {
+		96B2CE592422EC040082A149 /* {{crate_name}}Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96B2CE712422EC050082A149 /* Build configuration list for PBXNativeTarget "{{project-name}}Tests" */;
+			buildConfigurationList = 96B2CE712422EC050082A149 /* Build configuration list for PBXNativeTarget "{{crate_name}}Tests" */;
 			buildPhases = (
 				96B2CE562422EC040082A149 /* Sources */,
 				96B2CE572422EC040082A149 /* Frameworks */,
@@ -182,14 +182,14 @@
 			dependencies = (
 				96B2CE5C2422EC040082A149 /* PBXTargetDependency */,
 			);
-			name = "{{project-name}}Tests";
-			productName = "{{project-name}}Tests";
-			productReference = 96B2CE5A2422EC040082A149 /* {{project-name}}Tests.xctest */;
+			name = "{{crate_name}}Tests";
+			productName = "{{crate_name}}Tests";
+			productReference = 96B2CE5A2422EC040082A149 /* {{crate_name}}Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		96B2CE642422EC050082A149 /* {{project-name}}UITests */ = {
+		96B2CE642422EC050082A149 /* {{crate_name}}UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96B2CE742422EC050082A149 /* Build configuration list for PBXNativeTarget "{{project-name}}UITests" */;
+			buildConfigurationList = 96B2CE742422EC050082A149 /* Build configuration list for PBXNativeTarget "{{crate_name}}UITests" */;
 			buildPhases = (
 				96B2CE612422EC050082A149 /* Sources */,
 				96B2CE622422EC050082A149 /* Frameworks */,
@@ -200,9 +200,9 @@
 			dependencies = (
 				96B2CE672422EC050082A149 /* PBXTargetDependency */,
 			);
-			name = "{{project-name}}UITests";
-			productName = "{{project-name}}UITests";
-			productReference = 96B2CE652422EC050082A149 /* {{project-name}}UITests.xctest */;
+			name = "{{crate_name}}UITests";
+			productName = "{{crate_name}}UITests";
+			productReference = 96B2CE652422EC050082A149 /* {{crate_name}}UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 96B2CE3F2422EC030082A149 /* Build configuration list for PBXProject "{{project-name}}" */;
+			buildConfigurationList = 96B2CE3F2422EC030082A149 /* Build configuration list for PBXProject "{{crate_name}}" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,9 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96B2CE432422EC030082A149 /* {{project-name}} */,
-				96B2CE592422EC040082A149 /* {{project-name}}Tests */,
-				96B2CE642422EC050082A149 /* {{project-name}}UITests */,
+				96B2CE432422EC030082A149 /* {{crate_name}} */,
+				96B2CE592422EC040082A149 /* {{crate_name}}Tests */,
+				96B2CE642422EC050082A149 /* {{crate_name}}UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -327,12 +327,12 @@
 /* Begin PBXTargetDependency section */
 		96B2CE5C2422EC040082A149 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 96B2CE432422EC030082A149 /* {{project-name}} */;
+			target = 96B2CE432422EC030082A149 /* {{crate_name}} */;
 			targetProxy = 96B2CE5B2422EC040082A149 /* PBXContainerItemProxy */;
 		};
 		96B2CE672422EC050082A149 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 96B2CE432422EC030082A149 /* {{project-name}} */;
+			target = 96B2CE432422EC030082A149 /* {{crate_name}} */;
 			targetProxy = 96B2CE662422EC050082A149 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -468,19 +468,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"{{project-name}}/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"{{crate_name}}/Preview Content\"";
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "{{project-name}}/Info.plist";
+				INFOPLIST_FILE = "{{crate_name}}/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/target/universal/debug",
+					"$(PROJECT_DIR)/target/aarch64-apple-ios/debug/",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project-name}}";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/target/aarch64-apple-ios-sim/debug/",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = bindings.h;
 				SWIFT_VERSION = 5.0;
@@ -493,19 +498,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"{{project-name}}/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"{{crate_name}}/Preview Content\"";
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "{{project-name}}/Info.plist";
+				INFOPLIST_FILE = "{{crate_name}}/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/target/universal/release",
+					"$(PROJECT_DIR)/target/aarch64-apple-ios/release/",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project-name}}";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/target/aarch64-apple-ios-sim/release/",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = bindings.h;
 				SWIFT_VERSION = 5.0;
@@ -519,18 +529,18 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "{{project-name}}Tests/Info.plist";
+				INFOPLIST_FILE = "{{crate_name}}Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project-name}}Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{project-name}}.app/{{project-name}}";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{crate_name}}.app/{{crate_name}}";
 			};
 			name = Debug;
 		};
@@ -540,18 +550,18 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "{{project-name}}Tests/Info.plist";
+				INFOPLIST_FILE = "{{crate_name}}Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project-name}}Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{project-name}}.app/{{project-name}}";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/{{crate_name}}.app/{{crate_name}}";
 			};
 			name = Release;
 		};
@@ -560,17 +570,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "{{project-name}}UITests/Info.plist";
+				INFOPLIST_FILE = "{{crate_name}}UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project-name}}UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "{{project-name}}";
+				TEST_TARGET_NAME = "{{crate_name}}";
 			};
 			name = Debug;
 		};
@@ -579,24 +589,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "{{project-name}}UITests/Info.plist";
+				INFOPLIST_FILE = "{{crate_name}}UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project-name}}UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "{{project-name}}";
+				TEST_TARGET_NAME = "{{crate_name}}";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96B2CE3F2422EC030082A149 /* Build configuration list for PBXProject "{{project-name}}" */ = {
+		96B2CE3F2422EC030082A149 /* Build configuration list for PBXProject "{{crate_name}}" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96B2CE6C2422EC050082A149 /* Debug */,
@@ -605,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96B2CE6E2422EC050082A149 /* Build configuration list for PBXNativeTarget "{{project-name}}" */ = {
+		96B2CE6E2422EC050082A149 /* Build configuration list for PBXNativeTarget "{{crate_name}}" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96B2CE6F2422EC050082A149 /* Debug */,
@@ -614,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96B2CE712422EC050082A149 /* Build configuration list for PBXNativeTarget "{{project-name}}Tests" */ = {
+		96B2CE712422EC050082A149 /* Build configuration list for PBXNativeTarget "{{crate_name}}Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96B2CE722422EC050082A149 /* Debug */,
@@ -623,7 +633,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96B2CE742422EC050082A149 /* Build configuration list for PBXNativeTarget "{{project-name}}UITests" */ = {
+		96B2CE742422EC050082A149 /* Build configuration list for PBXNativeTarget "{{crate_name}}UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96B2CE752422EC050082A149 /* Debug */,
