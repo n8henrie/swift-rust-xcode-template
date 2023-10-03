@@ -1,15 +1,16 @@
-#!/bin/sh
+#!/bin/bash
 
-# Credit goes to https://stackoverflow.com/a/42602808
+set -euf -o pipefail
+set -x
+
+# Force use of MacOS built-in tooling, which should always be available. This
+# avoids issues for users that are using GNU coreutils by default via homebrew
+# or nixpkgs.
+PATH=$(getconf PATH)
 
 OLDNAME=swift-rust-xcode-template
-NEWNAME={{project-name}}
+NEWNAME='{{project-name}}'
 
-export LC_CTYPE=C
-export LANG=C
-find . -type f ! -path ".*/.*" -exec sed -i '' -e "s/${OLDNAME}/${NEWNAME}/g" {} +
+find . -type f -not -name 'rename.sh' -not -path "./.git/*" -exec sed -i '' -e "s|${OLDNAME}|${NEWNAME}|g" {} +
 
-mv "${OLDNAME}.xcodeproj" "${NEWNAME}.xcodeproj"
-mv "${OLDNAME}" "${NEWNAME}"
-mv "${OLDNAME}Tests" "${NEWNAME}"
-mv "${OLDNAME}UITests" "${NEWNAME}"
+find . -name "*${OLDNAME}*" -exec bash -c 'mv "${1}" "${1//"${2}"/${3}}"' _ {} "${OLDNAME}" "${NEWNAME}" \;
