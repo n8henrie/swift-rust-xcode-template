@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Utility script for batch renaming files and replacing references to those
+# filenames. You hopefully *don't* need to use this anymore, but still helpful
+# to have around for development.
+
 set -euf -o pipefail
 set -x
 
