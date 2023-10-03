@@ -17,4 +17,4 @@ NEWNAME='{{crate_name}}'
 
 find . -type f -not -name 'rename.sh' -not -path "./.git/*" -exec sed -i '' -e "s|${OLDNAME}|${NEWNAME}|g" {} +
 
-find . -name "*${OLDNAME}*" -exec bash -c '[ -e "${1}" ] && mv "${1}" "${1//"${2}"/${3}}"' _ {} "${OLDNAME}" "${NEWNAME}" \;
+find . -name "*${OLDNAME}*" -execdir bash -c 'mv "${1}" "${1//"${2}"/${3}}"' _ {} "${OLDNAME}" "${NEWNAME}" \;
