@@ -486,7 +486,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/target/aarch64-apple-ios-sim/debug/",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project_name}}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = bindings.h;
 				SWIFT_VERSION = 5.0;
@@ -516,7 +516,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/target/aarch64-apple-ios-sim/release/",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project_name}}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = bindings.h;
 				SWIFT_VERSION = 5.0;
@@ -537,7 +537,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project_name}}Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,7 +558,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project_name}}Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,7 +577,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project_name}}UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -596,7 +596,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{crate_name}}UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rust.{{project_name}}UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
