@@ -15,7 +15,7 @@ pub extern fn rust_hello(to: *const c_char) -> *mut c_char {
 pub extern fn rust_hello_free(s: *mut c_char) {
     unsafe {
         if s.is_null() { return }
-        CString::from_raw(s)
+        drop(CString::from_raw(s))
     };
 }
 
